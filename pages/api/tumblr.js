@@ -6,8 +6,4 @@ export default function handler(req, res) {
   client.blogPosts('wolfisakionwheels.tumblr.com', { limit: 200 }, function (err, data) {
     res.status(200).json(data)
   });
-
 }
-
-
-

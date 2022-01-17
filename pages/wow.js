@@ -5,7 +5,7 @@ import Navigation from '@components/Navigation'
 
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://mombre2.netlify.app/api/tumblr')
+  const res = await fetch('http://localhost:3001/api/tumblr')
   const data = await res.json()
   return {
     props: { posts: data.posts }
